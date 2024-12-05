@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="{{ url_for('static', filename='registration.css') }}" type="text/css">
+<div id="clouds">
+  <div class="cloud x1"></div>
+  <div class="cloud x2"></div>
+  <div class="cloud x3"></div>
+  <div class="cloud x4"></div>
+  <div class="cloud x5"></div>
+</div>
+<div class="container1">
+  <body>
+    <div class="top-bar">
+      <div class="left-buttons">
+        <a href="{{ url_for('lk') }}" class="nav-button">Home</a>
+        <a href="{{ url_for('about') }}" class="nav-button">About</a>
+        <button class="nav-button">Contact</button>
+        <a href="{{ url_for('game_create') }}" class="nav-button">Game</a>
+      </div>
+      <div class="right-buttons">
+        <div class="user_name">
+          <span>Welcome, {{ username }}!</span>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn"><img src="{{ Photo }}" alt="Profile" class="profile-img"></button>
+          <div class="dropdown-content">
+            <a href="{{ url_for('lk') }}">Профиль</a>
+            <a href="{{ url_for('update_profile_page') }}">Настройки</a>
+            <a href="{{ url_for('logout') }}">Выход</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="profile-container">
+      <!-- Левый блок с профилем -->
+      <div class="profile">
+        <img src="{{ user['Photo_path'] }}" alt="Profile Picture" class="profile-pic">
+        <div class="profile-info">
+          <h2>Имя пользователя:</h2>
+          <div class="info-box">
+            <p>{{ user['Login'] }}</p>
+          </div>
+          <h2>Полное имя:</h2>
+          <div class="info-box">
+            <p>{{ user['FullName'] }}</p>
+          </div>
+          <h2>О себе:</h2>
+          <div class="info-box">
+            <p>{{ user['Discription'] }}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Правый блок с другой информацией -->
+      <div class="extra-info">
+        <h2>Желания:</h2>
+        <div class="wish-box">
+          <p>{{ user['Wish'] }}</p>
+        </div>
+
+        <h2>Ссылки:</h2>
+        <div class="links-box">
+        <ul>
+        {% for Wish_list_itog_item in Wish_list_itog %}
+            <a href="{{ Wish_list_itog_item[1] }}">{{ Wish_list_itog_item[0] }}, </a>
+        {% endfor %}
+        </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</div>
+</html>

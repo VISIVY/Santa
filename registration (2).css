@@ -1,0 +1,522 @@
+ /* CSS Document */
+/* ---------- FONTAWESOME ---------- */
+/* ---------- https://fortawesome.github.com/Font-Awesome/ ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+/* ---------- ERIC MEYER'S RESET CSS ---------- */
+/* ---------- https://meyerweb.com/eric/tools/css/reset/ ---------- */
+@import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
+/* ---------- FONTAWESOME ---------- */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+* {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+*:before, *:after {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+
+body {
+  /*background: #7bbff5;*/
+  background: #2c3338;
+  color: #606468;
+  font: 87.5%/1.5em 'Open Sans', sans-serif;
+  margin: 0;
+  overflow-y:auto !important;
+  overflow-x:hidden !important;
+}
+
+a {
+  color: #eee;
+  text-decoration: none;
+}
+
+m {
+  color: #f181ab;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input {
+  border: none;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  padding: 0;
+  -webkit-appearance: none;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+textarea {
+  border: none;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  padding: 0;
+  -webkit-appearance: none;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  content: ' ';
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+.container {
+  left: 50%;
+  position:absolute;
+   top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.container2 {
+  left: 50%;
+  position:absolute;
+   top: 60%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/* ---------- LOGIN ---------- */
+#login {
+  width: 280px;
+}
+
+#login form span {
+  background-color: #363b41;
+  border-radius: 3px 0px 0px 3px;
+  color: #606468;
+  display: block;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+}
+
+#login form input {
+  height: 50px;
+}
+
+#login form input[type="text"], input[type="password"] {
+  background-color: #3b4148;
+  border-radius: 0px 3px 3px 0px;
+  color: #606468;
+  margin-bottom: 1em;
+  padding: 0 16px;
+  width: 230px;
+}
+
+#login form input[type="submit"] {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  /*background-color: #ea4c88;*/
+  background-color: #f181ab;
+  color: #eee;
+  font-weight: bold;
+  margin-bottom: 2em;
+  text-transform: uppercase;
+  width: 280px;
+}
+
+#login form input[type="submit"]:hover {
+  /*background-color: #d44179;*/
+  background-color: #f181ab;
+}
+
+#login > p {
+  text-align: center;
+}
+
+#login > p span {
+  padding-left: 5px;
+}
+
+/*Lets start with the cloud formation rather*/
+
+/*The container will also serve as the SKY*/
+
+*{ margin: 0; padding: 0;}
+
+/* ---------- lk ---------- */
+
+#lk {
+
+  /*background-color: #ea4c88;*/
+  background-color: #f181ab;
+  color: #eee;
+  font-weight: bold;
+  margin-bottom: 2em;
+  text-transform: uppercase;
+  width: 280px;
+  text-align: center;
+
+
+}
+
+*lk{ margin: 0; padding: 0;}
+
+/* Top bar styles */
+.top-bar {
+    display: flex;                /* Используем flexbox для выравнивания элементов */
+    justify-content: space-between; /* Распределяем пространство между элементами */
+    align-items: center;         /* Центрируем элементы по вертикали */
+    background-color: #2c3338;  /* Темный фон для верхней панели */
+    padding: 10px;               /* Отступы вокруг кнопок */
+    position: fixed;             /* Закрепить панель вверху */
+    top: 0;                      /* Привязать к верхней части */
+    left: 0;                     /* Привязать к левой части */
+    right: 0;                    /* Привязать к правой части */
+    z-index: 1000;              /* Поверх других элементов */
+}
+
+.left-buttons {
+    display: flex;
+  /* Используем flexbox для выравнивания кнопок слева */
+}
+
+.right-buttons{
+display: flex;                /* Используем flexbox для выравнивания элементов */
+    justify-content: space-between; /* Распределяем пространство между элементами */
+    align-items: center;
+}
+.user_name{
+  font-size: 14px;
+  color: #f181ab;
+  margin-right: 20px;
+}
+
+
+
+.nav-button {
+    background-color: #f181ab;   /* Green background */
+    color: white;                /* White text */
+    border: none;                /* No border */
+    padding: 13px 44px;          /* Padding for each button */
+    margin-right: 30px;          /* Spacing between buttons */
+    cursor: pointer;
+    font-size: 16px;             /* Font size for buttons */
+    border-radius: 5px;          /* Rounded corners */
+}
+
+.nav-button:hover {
+    background-color: #a63c64;   /* Изменить цвет кнопки при наведении */
+}
+
+.profile-img {
+    width: 55px;          /* Ширина изображения */
+    height: 55px;         /* Высота изображения */
+    border-radius: 50%;   /* Круглая форма */
+    object-fit: cover;    /* Заполняет и центрирует изображение */
+    display: block;       /* Убедитесь, что изображение отображается как блок */
+}
+
+/* Стили для профиля */
+.profile {
+    margin-top: 20px; /* Отступ сверху для отрисовки ниже верхней панели */
+    margin-left: 20px;
+    text-align: left; /* Центрируем текст */
+    color: #fff; /* Цвет текста */
+
+}
+
+.profile-pic {
+    width: 200px; /* Ширина картинки */
+    height: 200px; /* Высота картинки */
+    border-radius: 50%; /* Круглая форма */
+    object-fit: cover; /* Объект, заполняющий элемент */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+/* Стили для рамки профиля */
+.profile-info {
+    /*margin: 10px auto; /* Центрируем рамку */
+    max-width: 300px; /* Максимальная ширина рамки */
+}
+.profile-info h2{
+    /*margin: 10px auto; /* Центрируем рамку */
+    max-width: 300px; /* Максимальная ширина рамки */
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* Стили для отдельных рамок информации */
+.info-box {
+    background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный белый фон */
+    border: 1px solid #ffffff; /* Белая рамка */
+    border-radius: 10px; /* Закругленные углы */
+    padding: 15px; /* Отступ внутри рамки */
+    margin: 10px 0; /* Отступ сверху и снизу между рамками */
+}
+
+/* Стили для контейнера с профилем и дополнительной информацией */
+.profile-container {
+    display: flex;             /* Используем flexbox для выравнивания блоков */
+    justify-content: space-between; /* Пространство между левым и правым блоком */
+    margin-top: 10px;         /* Отступ сверху, чтобы блоки не закрывались верхней панелью */
+    padding: 20px;
+}
+
+/* Стили для блока с дополнительной информацией */
+.extra-info {
+
+    padding: 60px;
+    max-width: 700px; /* Максимальная ширина блока */
+    color: white; /* Цвет текста */
+
+    margin: 0 auto; /* Выравнивание по центру горизонтально */
+    margin-top: -10px; /* Отступ сверху для визуального пространства */
+    text-align: center; /* Выравнивание текста по центру */
+}
+.extra-info h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.wish-box, .links-box {
+    background-color: rgba(255, 255, 255, 0.05); /* Полупрозрачный фон для блоков */
+    padding: 55px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.wish-box p, .links-box a {
+    color: #ffffff; /* Белый цвет текста */
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.links-box a:hover {
+    color: #f181ab; /* Цвет текста при наведении */
+    text-decoration: underline;
+}
+
+.dropdown {
+    position: relative;          /* Необходимо для абсолютного позиционирования выпадающего списка */
+}
+
+.dropbtn {
+    background-color: #f181ab;  /* Цвет кнопки */
+    color: white;                /* Цвет текста */
+    padding: 0px;              /* Отступы внутри кнопки */
+    border: none;                /* Без границы */
+    border-radius: 50%;         /* Круглая форма */
+    cursor: pointer;             /* Курсор как указатель */
+}
+
+.dropdown-content {
+    display: none;               /* Скрыть выпадающий список по умолчанию */
+    position: absolute;          /* Позиционирование относительно кнопки */
+    right: 0;                   /* Выровнять по правому краю */
+    background-color: #f9f9f9;  /* Цвет фона выпадающего списка */
+    min-width: 160px;           /* Минимальная ширина выпадающего списка */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Тень */
+    z-index: 1;                 /* Чтобы был выше других элементов */
+}
+
+.dropdown-content a {
+    color: black;                /* Цвет текста ссылок */
+    padding: 12px 16px;         /* Отступы для ссылок */
+    text-decoration: none;       /* Без подчеркивания */
+    display: block;              /* Блоковые ссылки */
+}
+
+.dropdown-content a:hover {
+    background-color: #f181ab;   /* Цвет фона при наведении */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;              /* Показать выпадающий список при наведении на родительский элемент */
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #a63c64;   /* Изменить цвет кнопки при наведении */
+}
+
+#error {
+
+  /*background-color: #ea4c88;*/
+  background-color: #f181ab;
+  color: #eee;
+  font-weight: bold;
+  margin-bottom: 2em;
+  text-transform: uppercase;
+  width: 350px;
+  text-align: center;
+  font-size: 20px;
+
+
+}
+
+.save-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.save-btn {
+  background-color: #f181ab;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.save-btn:hover {
+  background-color: #a63c64;
+}
+
+.tenor-gif-embed {
+      max-width: 100%; /* Ограничиваем максимальную ширину div */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 60vh; /* Занимает 100% высоты окна просмотра */
+
+    }
+
+*error{ margin: 0; padding: 0;}
+
+.p { font-size: 24px;
+}
+#clouds{
+  padding: 50px 0;
+  background: #c9dbe9;
+  background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+  background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
+  background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+}
+
+/*Time to finalise the cloud shape*/
+.cloud {
+  width: 200px; height: 60px;
+  background: #fff;
+
+  border-radius: 200px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+
+  position: relative;
+}
+
+.cloud:before, .cloud:after {
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 100px; height: 80px;
+  position: absolute; top: -15px; left: 10px;
+
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+  width: 120px; height: 120px;
+  top: -55px; left: auto; right: 15px;
+}
+
+/*Time to animate*/
+.x1 {
+  -webkit-animation: moveclouds 15s linear infinite;
+  -moz-animation: moveclouds 15s linear infinite;
+  -o-animation: moveclouds 15s linear infinite;
+}
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+.x2 {
+  left: 200px;
+
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+  opacity: 0.6; /*opacity proportional to the size*/
+
+  /*Speed will also be proportional to the size and opacity*/
+  /*More the speed. Less the time in 's' = seconds*/
+  -webkit-animation: moveclouds 25s linear infinite;
+  -moz-animation: moveclouds 25s linear infinite;
+  -o-animation: moveclouds 25s linear infinite;
+}
+
+.x3 {
+  left: -250px; top: -200px;
+
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8; /*opacity proportional to the size*/
+
+  -webkit-animation: moveclouds 20s linear infinite;
+  -moz-animation: moveclouds 20s linear infinite;
+  -o-animation: moveclouds 20s linear infinite;
+}
+
+.x4 {
+  left: 470px; top: -250px;
+
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  transform: scale(0.75);
+  opacity: 0.75; /*opacity proportional to the size*/
+
+  -webkit-animation: moveclouds 18s linear infinite;
+  -moz-animation: moveclouds 18s linear infinite;
+  -o-animation: moveclouds 18s linear infinite;
+}
+
+.x5 {
+  left: -150px; top: -150px;
+
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8; /*opacity proportional to the size*/
+
+  -webkit-animation: moveclouds 20s linear infinite;
+  -moz-animation: moveclouds 20s linear infinite;
+  -o-animation: moveclouds 20s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+  0% {margin-left: 1000px;}
+  100% {margin-left: -1000px;}
+}
+@-moz-keyframes moveclouds {
+  0% {margin-left: 1000px;}
+  100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+  0% {margin-left: 1000px;}
+  100% {margin-left: -1000px;}
+}
+.bottom {
+  width:100%; margin:0 auto; text-align:center; padding:10px 0; height:100px; position:absolute;
+}
+.bottom h3 {color:white; font-size:30px; font-weight:bold; margin-top:45px; padding-bottom:45px;}
+.blue { color:#09c;}

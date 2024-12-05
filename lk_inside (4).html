@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="static/registration.css" type="text/css">
+<div id="clouds">
+  <div class="cloud x1"></div>
+  <div class="cloud x2"></div>
+  <div class="cloud x3"></div>
+  <div class="cloud x4"></div>
+  <div class="cloud x5"></div>
+</div>
+<div class="container1">
+  <body>
+    <div class="top-bar">
+      <div class="left-buttons">
+        <a href="{{ url_for('lk') }}" class="nav-button">Home</a>
+        <a href="{{ url_for('about') }}" class="nav-button">About</a>
+        <button class="nav-button">Contact</button>
+        <a href="{{ url_for('game_create') }}" class="nav-button">Game</a>
+      </div>
+      <div class="right-buttons">
+        <div class="user_name">
+          <span>Welcome, {{ username }}!</span>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn"><img src="{{ Photo_path }}" alt="Profile" class="profile-img"></button>
+          <div class="dropdown-content">
+            <a href="{{ url_for('lk') }}">Профиль</a>
+            <a href="{{ url_for('update_profile_page') }}">Настройки</a>
+            <a href="{{ url_for('logout') }}">Выход</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="profile-container">
+      <!-- Левый блок с профилем -->
+      <div class="profile">
+        <img src="{{ Photo_path }}" loading="lazy" alt="Profile Picture" class="profile-pic">
+        <div class="profile-info">
+          <h2>Имя пользователя:</h2>
+          <div class="info-box">
+            <p>{{ username }}</p>
+          </div>
+          <h2>Полное имя:</h2>
+          <div class="info-box">
+            <p>{{ FullName }}</p>
+          </div>
+          <h2>О себе:</h2>
+          <div class="info-box">
+            <p>{{ Discription }}</p>
+          </div>
+          <h2>Сумма для подарка:</h2>
+          <div class="info-box">
+            <p>3000</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Правый блок с другой информацией -->
+      <div class="extra-info">
+        <h2>Мои желания:</h2>
+        <div class="wish-box">
+          <p>{{ Wish }}</p>
+        </div>
+
+        <h2>Ссылки на мои желания:</h2>
+        <div class="links-box">
+        <ul>
+        {% for Wish_list_itog_item in Wish_list_itog %}
+            <a href="{{ Wish_list_itog_item[1] }}">{{ Wish_list_itog_item[0] }}, </a>
+        {% endfor %}
+        </ul>
+        </div>
+
+        <h2>Кому дарю:</h2>
+        <div class="links-box">
+        <ul>
+        <!-- Перебор элементов множества -->
+        {% for Unique_giter in Unique_New_List_of_giter %}
+            <a href="{{ url_for('user_profile', user_id=Unique_giter) }}">{{ Unique_giter }}, </a>
+        {% endfor %}
+        </ul>
+        </div>
+
+        <h2>Шизы 2.0:</h2>
+        <div class="links-box">
+        <ul>
+        <!-- Перебор элементов множества -->
+        {% for Unique_giter_wals in Unique_New_List_user_wals %}
+            <a href="{{ url_for('user_profile_wall', user_id=Unique_giter_wals) }}">{{ Unique_giter_wals }}, </a>
+        {% endfor %}
+        </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</div>
+</html>
