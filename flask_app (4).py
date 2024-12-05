@@ -15,10 +15,10 @@ import re
 
 # Подключение к MySQL
 connection_config = {
-    'user': 'Serg0239',
-    'password': 'Young_jaba123',
-    'host': 'Serg0239.mysql.pythonanywhere-services.com',
-    'database': 'Serg0239$Secret_Santa',
+    'user': '*******',
+    'password': '******',
+    'host': '******',
+    'database': '******',
 }
 
 app = Flask(__name__)
